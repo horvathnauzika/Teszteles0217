@@ -11,8 +11,6 @@ public class FemAlakzatokProgram {
 
     public FemAlakzatokProgram() {
         alakzatok = new ArrayList<>();
-        alakzatok.add(new Gomb(1));
-        alakzatok.add(new Hasab(1,1,1));
     }
 
     public double gombokOsszSuly() {
@@ -24,7 +22,7 @@ public class FemAlakzatokProgram {
     }
 
     public ArrayList<FemAlakzat> getLista() {
-        return alakzatok;
+        return new ArrayList<>(alakzatok);
     }
 
     public double osszSuly() {
@@ -34,7 +32,6 @@ public class FemAlakzatokProgram {
         }
         return ossz;
     }
-
 
     public FemAlakzat minV() {
         return new FemAlakzat() {

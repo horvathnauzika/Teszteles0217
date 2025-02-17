@@ -10,6 +10,4 @@ public abstract class FemAlakzat {
     public double suly() {
         return 5.026;
     }
-
-
 }
